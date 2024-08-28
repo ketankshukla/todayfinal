@@ -28,3 +28,6 @@ Thumbs.db
 
 # Sensitive Information
 .env
+
+/node_modules
+
