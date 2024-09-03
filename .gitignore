@@ -26,11 +26,5 @@ ENV/
 .DS_Store
 Thumbs.db
 
-# Sensitive Information
-.env
-
-/node_modules
-
-
 /node_modules
 .prettierrc
