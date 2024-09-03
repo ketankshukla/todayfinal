@@ -1,0 +1,40 @@
+:root {
+  --teal: #008080;
+  --sunset-orange: #FD5E53;
+  --white: #FFFFFF;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: var(--white);
+  color: #333;
+}
+
+header {
+  background-color: var(--teal);
+  color: var(--white);
+  padding: 1.5rem;
+  text-align: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  margin: 0;
+  font-size: 2.5rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+h2 {
+  color: var(--sunset-orange);
+}
+
+p {
+  line-height: 1.6;
+}
