@@ -1,6 +1,9 @@
 {
-  "dependencies": {
-    "@prettier/plugin-python": "^0.0.0-development",
-    "prettier": "^3.3.3"
-  }
+    "description": "A new project created from template",
+    "name": "goforit",
+    "version": "1.0.0",
+    "dependencies": {
+        "@prettier/plugin-python": "^0.0.0-development",
+        "prettier": "^3.3.3"
+    }
 }
