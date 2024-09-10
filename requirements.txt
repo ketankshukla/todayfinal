@@ -42,6 +42,7 @@ starlette==0.38.5
 typing_extensions==4.12.2
 tzdata==2024.1
 uvicorn==0.30.6
+views==0.3
 vine==5.1.0
 watchfiles==0.24.0
 wcwidth==0.2.13
