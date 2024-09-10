@@ -7,6 +7,7 @@
         "prettier": "^3.3.3"
     },
     "devDependencies": {
-        "prettier-plugin-django-template": "^0.1.1"
+        "prettier-plugin-django-template": "^0.1.1",
+        "prettier-plugin-twig-melody": "^0.4.6"
     }
 }
