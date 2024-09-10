@@ -1,0 +1,28 @@
+:root {
+  --teal: #008080;
+  --sunset-orange: #FD5E53;
+  --white: #FFFFFF;
+  --dark-gray: #333333;
+  --light-gray: #f4f4f4;
+}
+
+/* Main Content Styling */
+main {
+  max-width: 800px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: var(--white);
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+h2 {
+  color: var(--sunset-orange);
+  font-size: 2rem;
+}
+
+p {
+  color: var(--dark-gray);
+  margin-bottom: 1.5rem;
+}

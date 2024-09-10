@@ -7,13 +7,13 @@
   "quoteProps": "as-needed",
   "trailingComma": "es5",
   "bracketSpacing": true,
-  "htmlWhitespaceSensitivity": "ignore",
+  "htmlWhitespaceSensitivity": "strict",
   "endOfLine": "lf",
   "overrides": [
     {
       "files": "*.html",
       "options": {
-        "parser": "html"
+        "parser": "django-template"
       }
     }
   ]
