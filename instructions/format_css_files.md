@@ -89,7 +89,7 @@ Update your `package.json` file to include a script that formats your CSS files.
     "postcss-cli": "^10.1.0"
   },
   "scripts": {
-    "format": "prettier --write \"**/*.css\" && postcss \"**/*.css\" --replace"
+    "cssformat": "prettier --write \"**/*.css\" && postcss \"**/*.css\" --replace"
   }
 }
 ```
@@ -101,7 +101,7 @@ This script will first format your CSS files using Prettier and then run PostCSS
 To format your CSS files and remove all blank lines, simply run:
 
 ```bash
-npm run format
+npm run cssformat
 ```
 
 This will:
@@ -125,8 +125,8 @@ This will:
     
 2.  Create `.prettierrc` for Prettier configuration.
 3.  Create `postcss.config.js` with the custom plugin.
-4.  Add the `format` script to `package.json`.
-5.  Run `npm run format` to format and remove all blank lines from your CSS files.
+4.  Add the `cssformat` script to `package.json`.
+5.  Run `npm run cssformat` to format and remove all blank lines from your CSS files.
 
 This setup will format all CSS files in your project and remove blank lines automatically, ensuring a clean and consistent style.
 
