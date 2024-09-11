@@ -34,7 +34,7 @@ const removeBlankLinesAndFormat = (filePath) => {
   }
 };
 
-// Function to recursively search for all JSON files and skip node_modules and certain files
+// Function to recursively search for all JSON files and skip node_modules, .venv, and certain files
 const findJsonFiles = (dir) => {
   const files = fs.readdirSync(dir);
 
@@ -43,13 +43,10 @@ const findJsonFiles = (dir) => {
     const stats = fs.statSync(filePath);
 
     if (stats.isDirectory()) {
-      if (file === 'node_modules') return;  // Skip node_modules directory
+      if (file === 'node_modules' || file === '.venv') return;  // Skip node_modules and .venv directories
       findJsonFiles(filePath);  // Recurse into directories
     } else if (filePath.endsWith('.json')) {
-      if (file === 'package.json' || file === 'package-lock.json') {
-        console.log(`Skipping ${filePath}`);
-        return;  // Skip package.json and package-lock.json
-      }
+      if (file === 'package.json' || file === 'package-lock.json') return;  // Skip package.json and package-lock.json
       removeBlankLinesAndFormat(filePath);  // Process other JSON files
     }
   });
