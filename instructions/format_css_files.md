@@ -1,6 +1,5 @@
-Great! Here's a complete step-by-step guide for setting up Prettier and PostCSS to remove all blank lines from CSS files (including within rule blocks) in your Django project.
+### Step-by-Step instructions to format CSS files on the whole Django project
 
-### Step-by-Step Guide:
 
 #### 1\. **Initialize Your Project**
 
