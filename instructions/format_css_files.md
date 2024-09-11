@@ -33,53 +33,21 @@ This will install:
 Create a `.prettierrc` file in your project root to configure Prettier:
 
 ```json
-
 {
-  "printWidth"
-: 80
-,
-  "tabWidth"
-: 2
-,
-  "useTabs"
-: 
-false
-
-,
-  "semi"
-: 
-true
-
-,
-  "singleQuote"
-: 
-false
-
-,
-  "quoteProps"
-: "as-needed"
-,
-  "trailingComma"
-: "es5"
-,
-  "bracketSpacing"
-: 
-true
-
-,
-  "endOfLine"
-: "lf"
-,
-  "overrides"
-: [
+  "printWidth": 80,
+  "tabWidth": 2,
+  "useTabs": false,
+  "semi": true,
+  "singleQuote": false,
+  "quoteProps": "as-needed",
+  "trailingComma": "es5",
+  "bracketSpacing": true,
+  "endOfLine": "lf",
+  "overrides": [
     {
-      "files"
-: "*.css"
-,
-      "options"
-: {
-        "parser"
-: "css"
+      "files": "*.css",
+      "options": {
+        "parser": "css"
       }
     }
   ]
@@ -91,7 +59,6 @@ true
 Create a `postcss.config.js` file in your project root with the following content:
 
 ```js
-
 module.exports = {
   plugins: [
     require('postcss-strip-inline-comments')(),  // Removes comments and blank lines
@@ -112,40 +79,19 @@ This configuration ensures that all blank lines within rule blocks are removed.
 Update your `package.json` file to include a script that formats your CSS files. Your `package.json` should look like this:
 
 ```json
-
 {
-  "description"
-: "A new project created from template"
-,
-  "name"
-: "goforit"
-,
-  "version"
-: "1.0.0"
-,
-  "dependencies"
-: {
-}
-,
-  "devDependencies"
-: {
-    "prettier"
-: "^3.3.3"
-,
-    "postcss"
-: "^8.4.45"
-,
-    "postcss-strip-inline-comments"
-: "^0.1.5"
-,
-    "postcss-cli"
-: "^10.1.0"
-  }
-,
-  "scripts"
-: {
-    "format"
-: "prettier --write \"**/*.css\" && postcss \"**/*.css\" --replace"
+  "description": "A new project created from template",
+  "name": "goforit",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "postcss": "^8.4.45",
+    "postcss-strip-inline-comments": "^0.1.5",
+    "postcss-cli": "^10.1.0"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.css\" && postcss \"**/*.css\" --replace"
   }
 }
 ```
