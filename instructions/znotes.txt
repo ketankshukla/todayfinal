@@ -1,6 +1,6 @@
-to manually format html templates: djlint --reformat newapp/templates
+to manually format html templates on the entire project: djlint goforit/**/*.html --reformat
 
-to manually format css files: npm run format
+to manually format css files on the entire project: npm run format
 
 to update the package versions in the requirements.txt file all in one shot
 

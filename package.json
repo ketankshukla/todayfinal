@@ -10,6 +10,7 @@
     "postcss-cli": "^10.1.0"
   },
   "scripts": {
-    "format": "prettier --write \"**/*.css\" && postcss \"**/*.css\" --replace"
+    "cssformat": "prettier --write \"**/*.css\" && postcss \"**/*.css\" --replace",
+    "htmlformat": "djlint . --reformat"
   }
 }
