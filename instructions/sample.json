@@ -1,7 +1,7 @@
 {
   "name": "Sample Project",
   "version": "1.0.0",
-  "description": "This is a sample JSON file with various data types.",
+  "description": "This is a sample JSON file that I used for testing the formatting.",
   "author": {
     "firstName": "John",
     "lastName": "Doe",
