@@ -3,11 +3,6 @@
     "name": "goforit",
     "version": "1.0.0",
     "dependencies": {
-        "@prettier/plugin-python": "^0.0.0-development",
         "prettier": "^3.3.3"
-    },
-    "devDependencies": {
-        "prettier-plugin-django-template": "^0.1.1",
-        "prettier-plugin-twig-melody": "^0.4.6"
     }
 }

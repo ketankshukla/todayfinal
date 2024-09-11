@@ -1,50 +1,54 @@
-amqp==5.2.0
-annotated-types==0.7.0
-anyio==4.4.0
-asgiref==3.8.1
-billiard==4.2.0
-black==24.8.0
-celery==5.5.0b3
-click==8.1.7
-click-didyoumean==0.3.1
-click-plugins==1.1.1
-click-repl==0.3.0
-colorama==0.4.6
-Django==5.1.1
-django-environ==0.11.2
-djangorestframework==3.15.2
-Faker==28.4.1
-fastapi==0.114.0
-flake8==7.1.1
-h11==0.14.0
-httptools==0.6.1
-idna==3.8
-kombu==5.4.0
-mccabe==0.7.0
-mypy-extensions==1.0.0
-packaging==24.1
-pathspec==0.12.1
-pillow==10.4.0
-platformdirs==4.3.2
-prompt_toolkit==3.0.47
-psycopg2-binary==2.9.9
-pycodestyle==2.12.1
-pydantic==2.9.1
-pydantic_core==2.23.3
-pyflakes==3.2.0
-Pygments==2.18.0
-python-dateutil==2.9.0.post0
-python-dotenv==1.0.1
-PyYAML==6.0.2
-six==1.16.0
-sniffio==1.3.1
-sqlparse==0.5.1
-starlette==0.38.5
-typing_extensions==4.12.2
-tzdata==2024.1
-uvicorn==0.30.6
-views==0.3
-vine==5.1.0
-watchfiles==0.24.0
-wcwidth==0.2.13
-websockets==13.0.1
+# Code Formatting & Linting
+black==24.8.0  # Python code formatter to ensure consistent styling.
+djlint==1.35.2  # Linter and formatter for Django templates (HTML, CSS).
+
+# Django & Core Framework
+Django==5.1.1  # The Django web framework for building your project.
+django-cors-headers==3.14.0  # Handle Cross-Origin Resource Sharing (CORS) in Django APIs.
+django-debug-toolbar==4.1.0  # Debugging tool for analyzing Django performance and SQL queries.
+django-environ==0.11.2  # Manage environment variables in Django projects.
+djangorestframework==3.15.2  # API framework for building REST APIs in Django.
+djangorestframework-simplejwt==5.2.2  # JWT-based authentication for DRF (REST APIs).
+drf-yasg==1.21.6  # Auto-generate Swagger/OpenAPI documentation for DRF APIs.
+gunicorn==20.1.0  # WSGI server for running Django in production.
+whitenoise==6.4.0  # Simplified static file serving in production for Django apps.
+
+# Database & ORM
+psycopg2-binary==2.9.9  # PostgreSQL database adapter for Django.
+sqlparse==0.5.1  # SQL parser used by Django for SQL formatting and query inspection.
+
+# Utility Libraries
+click==8.1.7  # Command-line utility package used by some tools like Black.
+colorama==0.4.6  # Cross-platform colored terminal text support.
+Faker==28.4.1  # Generate fake data for testing and development.
+python-dateutil==2.9.0.post0  # Utilities for parsing and manipulating dates and times.
+python-dotenv==1.0.1  # Load environment variables from a `.env` file into Django.
+PyYAML==6.0.2  # YAML parsing and emitting support.
+django-redis==5.3.0  # Redis backend support for Django caching.
+django-storages==1.13.2  # Support for storing files in cloud storage (S3, Google Cloud, etc.).
+
+# Type Checking & Extensions
+annotated-types==0.7.0  # Type annotations support for Python.
+mypy-extensions==1.0.0  # Type extensions for static type checking in Python (used with mypy).
+typing_extensions==4.12.2  # Backport of typing features for older Python versions.
+
+# ASGI & Async Support
+asgiref==3.8.1  # ASGI support for Django (used for async features).
+sniffio==1.3.1  # Used for async context detection (dependency of HTTP libraries).
+
+# Miscellaneous & Support Libraries
+idna==3.8  # Support for Internationalized Domain Names (used by requests).
+packaging==24.1  # Package version parsing and utilities (used by pip and other tools).
+pathspec==0.12.1  # Utility for matching file patterns (used by Black).
+pillow==10.4.0  # Python Imaging Library (PIL) for image processing in Django.
+platformdirs==4.3.2  # Determine directories for user data across platforms (used by Black).
+six==1.16.0  # Python 2 and 3 compatibility utilities (used by various libraries).
+tzdata==2024.1  # Timezone data for date and time handling in Django.
+
+# Security & Monitoring
+django-secure==1.0.0  # Add security headers like CSP and HSTS to Django apps.
+sentry-sdk==1.30.0  # Error tracking and monitoring for Django apps using Sentry.
+
+# Testing & Development Tools
+factory-boy==3.2.1  # Factory pattern library for generating test data.
+django-test-plus==1.4.0  # Additional testing utilities for Django.

@@ -1,49 +1,49 @@
 :root {
-  --teal: #008080;
-  --sunset-orange: #FD5E53;
-  --white: #FFFFFF;
+    --teal: #008080;
+    --sunset-orange: #FD5E53;
+    --white: #FFFFFF;
 }
 
 /* Header Styling */
 header {
-  background-color: var(--teal);
-  color: var(--white);
-  padding: 2rem;
-  text-align: center;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+    background-color: var(--teal);
+    color: var(--white);
+    padding: 2rem;
+    text-align: center;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
 }
 
 header h1 {
-  margin: 0;
-  font-size: 2.5rem;
-  font-weight: bold;
+    margin: 0;
+    font-size: 2.5rem;
+    font-weight: bold;
 }
 
 nav ul {
-  list-style: none;
-  padding: 0;
-  margin: 1.5rem 0 0 0;
+    list-style: none;
+    padding: 0;
+    margin: 1.5rem 0 0 0;
 }
 
 nav ul li {
-  display: inline-block;
-  margin-right: 1.5rem;
+    display: inline-block;
+    margin-right: 1.5rem;
 }
 
 nav ul li:last-child {
-  margin-right: 0;
+    margin-right: 0;
 }
 
 nav ul li a {
-  background-color: var(--sunset-orange);
-  color: var(--white);
-  padding: 0.75rem 1.5rem;
-  border-radius: 50px;
-  font-weight: bold;
-  transition: background-color 0.3s ease, transform 0.3s ease;
+    background-color: var(--sunset-orange);
+    color: var(--white);
+    padding: 0.75rem 1.5rem;
+    border-radius: 50px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 nav ul li a:hover {
-  background-color: #ff7043;
-  transform: scale(1.05);
+    background-color: #ff7043;
+    transform: scale(1.05);
 }
