@@ -1,6 +1,5 @@
 ### Step-by-Step instructions to format CSS files on the whole Django project
 
-
 #### 1\. **Initialize Your Project**
 
 Ensure your Node.js environment is set up in your project directory. If you haven’t initialized a project yet, run:
