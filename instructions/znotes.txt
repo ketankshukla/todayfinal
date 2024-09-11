@@ -1,9 +1,12 @@
-to manually format html templates on the entire project: djlint goforit/**/*.html --reformat
+to manually format html templates on the entire project: npm run htmlformat
 
-to manually format css files on the entire project: npm run format
+to manually format css files on the entire project: npm run cssformat
 
-to update the package versions in the requirements.txt file all in one shot
+to manually format json files on the entire django project: npm run jsonformat
 
+to run all 3 formats in one shot: npm run format
+
+to update the package versions in the requirements.txt file all in one shot:
 pip install pip-tools && pip-compile --upgrade --output-file=requirements.txt requirements.txt && pip install -r requirements.txt
 
 

@@ -12,6 +12,7 @@
   "scripts": {
     "cssformat": "prettier --write \"**/*.css\" && postcss \"**/*.css\" --replace",
     "htmlformat": "djlint . --reformat",
-    "format": "npm run cssformat && npm run htmlformat"
+    "jsonformat": "node test_prettier.js",
+    "format": "npm run cssformat && npm run htmlformat && npm run jsonformat"
   }
 }

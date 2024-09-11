@@ -1,0 +1,44 @@
+{
+  "name": "Sample Project",
+  "version": "1.0.0",
+  "description": "This is a sample JSON file with various data types.",
+  "author": {
+    "firstName": "John",
+    "lastName": "Doe",
+    "email": "john.doe@example.com"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.10.9"
+  },
+  "scripts": ["npm install", "npm run build", "npm start"],
+  "isPrivate": true,
+  "config": {
+    "port": 3000,
+    "env": "development",
+    "features": [
+      {
+        "name": "auth",
+        "enabled": true
+      },
+      {
+        "name": "notifications",
+        "enabled": false
+      }
+    ]
+  },
+  "keywords": ["sample", "json", "project", "example"],
+  "contributors": [
+    {
+      "name": "Jane Smith",
+      "role": "Developer",
+      "email": "jane.smith@example.com"
+    },
+    {
+      "name": "Sam Green",
+      "role": "Designer",
+      "email": "sam.green@example.com"
+    }
+  ],
+  "license": null
+}
