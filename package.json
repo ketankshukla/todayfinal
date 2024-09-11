@@ -1,8 +1,15 @@
 {
-    "description": "A new project created from template",
-    "name": "goforit",
-    "version": "1.0.0",
-    "dependencies": {
-        "prettier": "^3.3.3"
-    }
+  "description": "A new project created from template",
+  "name": "goforit",
+  "version": "1.0.0",
+  "dependencies": {},
+  "devDependencies": {
+    "prettier": "^3.3.3",
+    "postcss": "^8.4.45",
+    "postcss-strip-inline-comments": "^0.1.5",
+    "postcss-cli": "^10.1.0"
+  },
+  "scripts": {
+    "format": "prettier --write \"**/*.css\" && postcss \"**/*.css\" --replace"
+  }
 }

@@ -1,5 +1,7 @@
 to manually format html templates: djlint --reformat newapp/templates
 
+to manually format css files: npm run format
+
 to update the package versions in the requirements.txt file all in one shot
 
 pip install pip-tools && pip-compile --upgrade --output-file=requirements.txt requirements.txt && pip install -r requirements.txt
