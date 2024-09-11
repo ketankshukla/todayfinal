@@ -144,4 +144,3 @@ If you decide to include the optional npm script, your `package.json` will look 
 
 *   The command to format all the html files in the entire django project is `npm run htmlformat`.
 *   The project path is generalized to `"E:\projects\<django_startup_project_name>"`.
-* 
