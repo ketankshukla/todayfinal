@@ -14,7 +14,7 @@ gunicorn==20.1.0  # WSGI server for running Django in production.
 whitenoise==6.4.0  # Simplified static file serving in production for Django apps.
 
 # Database & ORM
-psycopg2-binary==2.9.9  # PostgreSQL database adapter for Django.
+# psycopg2-binary==2.9.9  # PostgreSQL database adapter for Django.
 sqlparse==0.5.1  # SQL parser used by Django for SQL formatting and query inspection.
 
 # Utility Libraries
